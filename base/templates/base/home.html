@@ -1,0 +1,66 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+<div id="container">
+  <div class="column-6">
+    <div id="left-wrapper">
+      <img src="{% static 'images/academia.jpg' %}" id="profile-pic">
+      <div id="left-wrapper-header">
+        <h3>Compre um peso</h3>
+        <h5>Vocé fará parte do projeto!</h5>
+      </div>
+      <div style="clear:left"></div>
+      <hr>
+      <form action="{% url 'home' %}" method="post" id="payment-form">
+        {% csrf_token %}
+        <div class="form-field-12">
+          <label for="amount">Escolha o preço:</label>
+          <br>
+          <br>
+          <select required name="amount" id="amount">
+            <option selected value="5">5kg --- 5R$</option>
+            <option value="10">10kg --- 10R$</option>
+            <option value="25">25kg --- 25R$</option>
+          </select>
+        </div>
+        
+        <div class="form-field-6"> 
+          <input type="text" name="email" placeholder="email...">
+        </div>
+
+        <div style="margin-left: 3;" class="form-field-6"> 
+          <input type="text" name="nickname" placeholder="Nome...">
+        </div>
+      
+        <div class="form-row">
+          
+          <div id="card-element">
+      
+          </div>
+          <div id="card-errors" role="alert"></div>
+        </div>
+
+        <div style="clear: left;"></div>
+        <hr>
+      
+        <input type="submit" class="myButton" style="background-color: #10a195;" value="Enviar doação" >
+      </form>
+    </div>
+  </div>
+
+  <div class="column-6">
+    <div id="right-wrapper">
+      <img src="https://cdn-icons-png.flaticon.com/128/9992/9992408.png" alt="">
+      <img src="https://cdn-icons-png.flaticon.com/128/10037/10037932.png" alt="">
+      <img src="https://cdn-icons-png.flaticon.com/128/10146/10146342.png" alt="">
+
+      <h3>Se você também quer uma academia que todos possam usar, nos ajude a construir!</h3>
+
+      <p>atualizações no instagram --</p>
+      <hr>
+
+    </div>
+  </div>
+</div>
+{% endblock content %}
