@@ -31,7 +31,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -115,7 +115,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'),)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STRIPE_PUBLIC_KEY_TEST = key.get('STRIPE_PUBLIC_KEY_TEST')
 
 STRIPE_SECRET_KEY_TEST = key.get('STRIPE_SECRET_KEY_TEST')
