@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 	<div id="box">
-		<img id="succes-icon" src="https://icons8.com.br/icon/0WQnyqK0u4fE/close-window">
+		<img id="succes-icon" src="{% static 'images/x.png' %}">
 		<h4>Algo deu errado... tente novamente</h4>
 		<hr>
 		<a class="myButton" href="{% url 'home' %}">&#x2190;Back to donation page</a>
