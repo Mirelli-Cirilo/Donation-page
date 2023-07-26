@@ -1,6 +1,6 @@
 # Donation-page
 
-```Página de doação````
+```Página de doação```
 
 TECNOLOGIAS: Python, Django, Html, Css.
 
