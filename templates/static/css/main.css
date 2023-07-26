@@ -73,17 +73,17 @@ hr{
   color: #10a195;
 }
 
-.coffee-cup{
+.peso{
   margin-left: 20px;
   width: 100px;
 }
 
-.coffee-cup2{
+.peso2{
   margin-left: 20px;
   width: 150px;
 }
 
-.coffee-cup3{
+.peso3{
   margin-left: 20px;
   width: 200px;
 }
@@ -148,7 +148,35 @@ input::placeholder {
 .myButton:hover {
   opacity: .6;
 }
+@media screen and (max-width:1200){
+  #container{
+    width: 80%;
+  }
+  .column-6{
+    width: 100%;
+  }
+}
 
+@media screen and (max-width:800px){
+  #container{
+    width: 100%;
+  }
+
+  .peso{
+    margin-left: 20px;
+    width: 50px;
+  }
+
+  .peso2{
+    margin-left: 20px;
+    width: 75px;
+  }
+
+  .peso3{
+    margin-left: 20px;
+    width: 100px;
+  }
+}
 /* success page */
 h4{
   font-family: 'Fjalla One', sans-serif;
