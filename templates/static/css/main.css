@@ -161,6 +161,9 @@ input::placeholder {
   #container{
     width: 100%;
   }
+  #profile-pic{
+    width: 150px;
+  }
 
   .peso{
     margin-left: 20px;
