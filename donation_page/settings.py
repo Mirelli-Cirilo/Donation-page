@@ -115,7 +115,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'),)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 STRIPE_PUBLIC_KEY_TEST = key.get('STRIPE_PUBLIC_KEY_TEST')
 
 STRIPE_SECRET_KEY_TEST = key.get('STRIPE_SECRET_KEY_TEST')
