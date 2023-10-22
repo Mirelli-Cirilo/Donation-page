@@ -1,221 +1,188 @@
-body{
-  background-color: #f8f8f8;
-}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
-h3, h5{
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 100;
-}
-
-h3{
-  font-size: 36px;
-}
-
-h5{
-  font-size: 24px;
-}
-
-p, label{
-  font-family: 'Inter', sans-serif;
-}
-
-hr{
-  color:#fff;
-  background-color: #fff;
-  border-top: 1px solid #fff;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-#container{
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 2%;
-
-}
-
-.column-6{
-  width: 50%;
-  float: Left;
-}
-
-#left-wrapper{
-  background-color: #43c1e0;
-  box-shadow: 0 1px 3px 0 #dce0e6;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  padding: 30px;
-}
-
-#right-wrapper{
-  padding: 30px;
-}
-
-#profile-pic{
-  width: 180px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 20%;
-  float: left;
-}
-
-#left-wrapper-header{
-  min-width: 50%;
-  float: left;
-  padding-left: 20px;
-}
-
-#left-wrapper-header h3{
-  color: #fff;
-}  
-
-#rigth-wrapper h3{
-  color: #10a195;
-}
-
-.peso{
-  margin-left: 20px;
-  width: 100px;
-}
-
-.peso2{
-  margin-left: 20px;
-  width: 150px;
-}
-
-.peso3{
-  margin-left: 20px;
-  width: 200px;
-}
-
-.form-field-12{
-  width: 100%;
-  margin-bottom: 10px;
-  padding-top: 5px;
-}
-
-.form-field-6{
-  width: 50%;
-  float:left;
-  margin-bottom: 10px;
   
-}
-
-select{
-  width: 100%;
-  height: 60px!important;
-  box-shadow: 0 1px 3px 0 #dce0e6;
-  padding: 10px 12px;
-  border-radius: 4px;
-  background-color: #fff;
-  border: 1px solid transparent;
-  font-size: 20px;
-  color: #44464a;
-}
-
-input{
-  box-shadow: 0 1px 3px 0 #dce0e6;
-  height:40px;
-  border-radius:4px;
-  background-color: #fff;
-  border: 1px solid transparent;
-  color: #44464a;
-  width: 95%;
-  padding: 5px;
-  font-size: 16px;
-
-}
-
-input::placeholder {
-  color: #9fa1a6
-}
-.myButton {
-  background-color: #72cca7;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Verdana;
-  font-size: 17px;
-  padding: 10px;
-  width: 100%;
-  border-radius: 0;
-  text-decoration: none;
-  text-align: center;
-  transition: .3s;
-
-}
-
-.myButton:hover {
-  opacity: .6;
-}
-@media screen and (max-width:1200){
-  #container{
-    width: 80%;
+  li{
+    list-style: none;
   }
-  .column-6{
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header-container {
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 0px;
+    z-index: 10;
     width: 100%;
   }
-}
-
-@media screen and (max-width:800px){
-  #container{
+  
+  
+  .header-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-info .logo {
+    display: flex;
+  }
+  
+  .header-info .logo img {
     width: 100%;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-left: 40%;
   }
-  #profile-pic{
-    width: 150px;
+  
+
+  .header-info ul {
+    margin-left: 46rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.1rem;
   }
 
-  .peso{
-    margin-left: 20px;
-    width: 50px;
+
+  .header-info p {
+    padding: 0;
+    margin: 0;
+    color: #37daf0;
+    font-size: 1.2rem;
+  }
+  
+  .header-info a {
+    color: white;
+    transition: 1s;
+   
+  }
+  
+  .header-info a:hover{
+    font-size: 1.1rem;
+    color: rgb(98, 210, 224);
   }
 
-  .peso2{
-    margin-left: 20px;
-    width: 75px;
+  .cat-prod{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
   }
 
-  .peso3{
-    margin-left: 20px;
-    width: 100px;
+  .cat-prod .cat{
+    box-shadow: 6px 7px 2px rgb(100, 98, 98);
+    margin-bottom: 2rem;
+    padding: 2rem;
   }
-}
-/* success page */
-h4{
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 100;
-  font-size: 24px;
-}
-#box{
-  max-width: 500px;
-  margin:0 auto;
-  margin-top: 100px;
-  padding: 30px;
-  background-color: #fff;
-  text-align: center;
-  box-shadow: 0 1px 3px 0 #dce0e6;
-  border-radius: 4px;
-  border: 1px solid transparent;
-}
-.myButton {
-  background-color:#72cca7 ;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Verdana;
-  font-size: 17px;
-  padding: 10px;
-  width: 100%;
-  border-radius: 0;
-  text-decoration: none;
-  text-align: center;
-  transition: .3s;
 
-}
-.myButton:hover { 
-  opacity: .6;
-}
+  .products{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
 
-#success-icon{
-  width: 100px;
-}
+  .container-products{
+    margin-bottom: 2rem;
+  }
+
+  
+
+  .footer-container{
+    background-color: rgba(0, 0, 0, 0.932);
+    width: 122%;
+    margin-left: -8.1rem;
+    margin-bottom: -1rem;
+    padding-top: 1.5rem;
+    margin-top: -12rem;
+
+  }
+
+  .footer-container p{
+    color: #fff;
+  }
+
+  .footer-container p a{
+    color: #37daf0;
+    font-size: larger;
+  }
+
+  .footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .maded{
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    margin-top: 0.8rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .maded p{
+    margin-top: 0.7rem;
+  }
+ 
+  @media only screen and (max-width: 900px) {
+    
+    .header-container{
+      max-width: 100%;
+     
+      
+    }
+
+    .header-info .logo img {
+      width: 104px;
+      height: 4rem;
+      border-radius: 50%;
+      margin-left: -7%;
+    }
+    .header-info ul {
+      margin-left: 10%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .products{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 11%;
+    }
+   
+    .list-prod img{
+      width: 300px;
+      border: .5rem solid black;
+    } 
+
+
+    .footer-container{
+      width: 106.4%;
+      margin-left: -0.7rem;
+    }
+  }
